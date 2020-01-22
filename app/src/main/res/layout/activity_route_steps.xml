@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.RouteStepsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/navigation"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="24dp"
+        >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Serdang KTM Commuter Station Bus Stop"
+        android:textStyle="bold"
+        android:textColor="@color/colorLightBlack"
+        android:textSize="19sp"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Taman Muhibbah, 43300 Seri Kembangan, Selangor"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Head northwest toward Lebuhraya Sungai Besi/E9. 16 s (57 m)"
+        android:textColor="@color/colorLightBlack"
+        android:textSize="17sp"
+        android:drawableStart="@drawable/ic_direction"
+        android:drawablePadding="8dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Continue on Lebuhraya Sungai Besi/E9. Take Jalan Istana, Jalan Damansara and Lebuhraya Sultan Iskandar to Jalan Kuching/Route 1 in Kuala Lumpur. Take the exit toward E8/Kuantan/Genting Highlands/Gombak/Ampang/E33/Ulu Kelang/Setiawangsa/Jln. Semarak from Lebuhraya Sultan Iskandar...\n\21 min (20.8 km)" android:textColor="@color/colorLightBlack"
+        android:textSize="17sp"
+        android:drawableStart="@drawable/ic_direction"
+        android:drawablePadding="8dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Continue on Jalan Kuching/Route 1 to your destination in Batu Caves.\n12 min (9.2 km)"
+        android:textColor="@color/colorLightBlack"
+        android:textSize="17sp"
+        android:drawableStart="@drawable/ic_direction"
+        android:drawablePadding="8dp"
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Batu Caves"
+            android:textStyle="bold"
+            android:textColor="@color/colorLightBlack"
+            android:textSize="19sp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gombak, 68100 Batu Caves, Selangor"
+
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="These directions are for planning purposes only. You may find that construction projects, traffic, weather, or other events may cause conditions to differ from the map results, and you should plan your route accordingly. You must obey all signs or notices regarding your route.\n\n\n"
+            android:layout_marginTop="30dp"
+            />
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGreen"
+        app:menu="@menu/navigation"
+        android:layout_alignParentBottom="true"
+        app:itemTextColor="@color/colorWhite"
+        />
+
+
+
+
+</RelativeLayout>

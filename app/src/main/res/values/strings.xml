@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Rail Mapping KL</string>
+    <string name="title_address">Address</string>
+    <string name="title_location">Location</string>
+    <string name="title_planner">Planner</string>
+    <string name="title_maps">Maps</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_place">Places</string>
+    <string name="gps_disabled_alert">Please turn on Location Services.\n For the best experience,Please \n set it to High Accuracy.</string>
+    <string name="title_profile">Profile</string>
+</resources>

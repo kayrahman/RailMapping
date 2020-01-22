@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.PlacesListActivity">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:fontFamily="@font/open_sans_semibold"
+        android:padding="4dp"
+        android:text="Most Visited Places"
+        android:textColor="@color/colorWhite"
+        android:textSize="21sp"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_ac_most_visited_places"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:layout_margin="16dp"
+        android:layout_above="@+id/navigation"
+        android:layout_below="@+id/tv_title"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGreen"
+        app:menu="@menu/navigation"
+        android:layout_alignParentBottom="true"
+        app:itemTextColor="@color/colorWhite"
+        />
+
+
+</RelativeLayout>

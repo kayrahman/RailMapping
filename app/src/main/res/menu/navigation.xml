@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/navigation_maps"
+        android:icon="@drawable/ic_action_maps"
+        android:title="@string/title_maps"/>
+
+    <item
+        android:id="@+id/navigation_planner"
+        android:icon="@drawable/ic_action_planner"
+        android:title="@string/title_planner"/>
+
+
+    <item
+        android:id="@+id/navigation_places"
+        android:icon="@drawable/ic_action_location"
+        android:title="@string/title_place"/>
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_action_person"
+        android:title="@string/title_profile"/>
+
+
+
+
+</menu>

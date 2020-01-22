@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountSetupActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/acc_set_up_image_btn"
+            android:layout_height="120dp"
+            android:layout_width="120dp"
+            android:src="@drawable/male"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            />
+
+
+
+        <EditText
+            android:id="@+id/acc_set_up_name_et"
+            style="@style/edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:hint="Name"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/acc_set_up_country_et"
+            android:hint="Country"
+            style="@style/edittext"
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/acc_set_up_city_et"
+            android:hint="City"
+            style="@style/edittext"
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/acc_set_up_phone_et"
+            android:hint="Phone"
+            style="@style/edittext"
+            android:inputType="number"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/acc_set_up_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/btnStyle"
+                android:text="Logout"
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/bg_register_btn"
+
+                />
+
+        <Button
+            android:id="@+id/acc_set_up_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Proceed"
+            style="@style/btnStyle"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/bg_login_btn"
+            />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGreen"
+        app:menu="@menu/navigation"
+        android:layout_alignParentBottom="true"
+        app:itemTextColor="@color/colorWhite"
+        />
+
+</RelativeLayout>

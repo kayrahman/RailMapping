@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.MapsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<fragment
+
+android:id="@+id/map"
+xmlns:map="http://schemas.android.com/apk/res-auto"
+android:name="com.google.android.gms.maps.SupportMapFragment"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    />
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_auto_complete_text"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginTop="32dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/search_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/places_ic_search"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="12dp"
+            />
+
+    <AutoCompleteTextView
+        android:id="@+id/at_ac_maps_search_location"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Get me somewhere"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="14dp"
+        android:background="@null"
+        android:layout_toEndOf="@+id/search_icon"
+        android:textSize="14sp"
+        android:imeOptions="actionSearch"
+
+        />
+
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_ac_maps_nearby_place_picker"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_place_picker_map"
+        android:layout_below="@+id/relative_layout"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="14dp"
+        />
+
+    <ImageView
+        android:id="@+id/iv_ac_maps_place_info"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_info"
+        android:layout_below="@+id/iv_ac_maps_nearby_place_picker"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="14dp"
+        />
+
+
+
+
+        <Button
+            android:id="@+id/btn_ac_maps_nearby_stations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/navigation"
+            android:text="Click to see nearby Stations"
+            android:textAllCaps="false"
+            android:background="@drawable/bg_login_btn"
+            android:textColor="@color/colorLightBlack"
+            android:textStyle="bold"
+            />
+
+
+        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+            android:id="@+id/rl_ac_maps_expandable_layout"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_above="@+id/btn_ac_maps_nearby_stations"
+            app:ael_expanded="false"
+            app:ael_duration="500"
+            app:ael_interpolator="accelerate"
+            app:ael_orientation="vertical"
+            >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_ac_maps_station_lists"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@color/colorWhite"
+                android:layout_margin="16dp"
+
+                >
+
+            </android.support.v7.widget.RecyclerView>
+
+
+        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+
+
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="0dp"
+            android:background="@color/colorGreen"
+            app:menu="@menu/navigation"
+            android:layout_gravity="bottom"
+            app:itemTextColor="@color/colorWhite"
+            android:layout_alignParentBottom="true"
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+  <!--  <android.support.v4.widget.NestedScrollView
+        android:id="@+id/bottom_sheet_stations"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:layout_behavior="@string/bottom_sheet_behavior"
+        android:background="@color/colorGreen"
+        app:behavior_hideable = "false"
+        app:behavior_peekHeight="100dp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="40dp"
+
+            >
+
+        <TextView
+            android:id="@+id/tv_station_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nearby Stations"
+            android:padding="16dp"
+            android:textSize="19sp"
+            android:textColor="@color/colorWhite"
+            />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_ac_maps_station_lists"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@color/colorWhite"
+            android:layout_margin="16dp"
+
+            >
+
+        </android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Most Visited Places"
+                android:textSize="19sp"
+                android:layout_margin="8dp"
+                android:textColor="@color/colorWhite"
+                android:layout_marginBottom="30dp"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>-->
+
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>
