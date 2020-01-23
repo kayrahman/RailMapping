@@ -1,8 +1,8 @@
 package neel.com.railmappingkl.adapter;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,7 +16,6 @@ import java.util.ArrayList;
 import neel.com.railmappingkl.R;
 import neel.com.railmappingkl.model.OnPopularPlaceItemClick;
 import neel.com.railmappingkl.model.PopularPlace;
-import neel.com.railmappingkl.model.StationInfo;
 
 public class PopularPlaceRecyclerAdapter extends RecyclerView.Adapter<PopularPlaceRecyclerAdapter.PopularPlaceViewHolder> {
 

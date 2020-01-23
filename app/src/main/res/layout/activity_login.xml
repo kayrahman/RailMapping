@@ -27,15 +27,17 @@
         android:id="@+id/title_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:fontFamily="@font/dynalight"
+        android:layout_above="@+id/ll_one"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/bungee_outline"
         android:gravity="center"
-        android:text="Welcome to KL"
+        android:text="Jatra"
+        android:textStyle="bold"
         android:textAllCaps="false"
-        android:textColor="@color/colorOrange"
+        android:textColor="@color/colorWhite"
         android:textSize="36sp"
-       />
-
+        android:letterSpacing=".8"
+        />
 
     <LinearLayout
         android:id="@+id/ll_one"
@@ -53,6 +55,7 @@
             android:text="Email"
             android:textColor="@color/colorWhite"
             />
+
         <EditText
             android:id="@+id/et_ac_login_email"
             android:layout_width="match_parent"
@@ -62,6 +65,8 @@
             android:hint="example@gmail.com"
 
             />
+
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -91,17 +96,17 @@
         >
 
 
-    <Button
-        android:id="@+id/btn_ac_login"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Login"
-        android:background="@drawable/bg_login_btn"
-        android:textColor="@color/white"
-        android:layout_marginTop="16dp"
+        <Button
+            android:id="@+id/btn_ac_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_login_btn"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Login"
 
 
-        />
+            android:textColor="@color/white" />
 
     <Button
         android:id="@+id/btn_ac_login_register"
@@ -111,7 +116,60 @@
         android:text="Register"
         android:textColor="@color/colorWhite"
         android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_medium"
         />
+
+
+
+
+
+        <TextView
+            android:id="@+id/hc_label_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Or signup using"
+            android:textColor="@color/colorWhite"
+            android:textAlignment="center"
+            android:layout_marginBottom="@dimen/spaceNormal"
+            android:layout_marginTop="@dimen/spaceNormal"
+            android:fontFamily="@font/poppins_medium"
+
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/hc_label_signup"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.448"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.456"
+            android:gravity="center"
+            android:padding="@dimen/spaceNormal"
+            >
+
+            <ImageButton
+                android:id="@+id/btn_auth_attempt"
+                android:layout_width="@dimen/defaultIconSize"
+                android:layout_height="@dimen/defaultIconSize"
+                android:background="@drawable/google"
+                android:layout_marginRight="@dimen/spaceNormal"
+                />
+
+            <ImageButton
+                android:layout_width="@dimen/defaultIconSize"
+                android:layout_height="@dimen/defaultIconSize"
+                android:background="@drawable/facebook"
+                android:layout_marginRight="@dimen/spaceNormal"
+                />
+
+            <ImageButton
+                android:layout_width="@dimen/defaultIconSize"
+                android:layout_height="@dimen/defaultIconSize"
+                android:background="@drawable/call"
+                />
+        </LinearLayout>
+
 
     </LinearLayout>
 

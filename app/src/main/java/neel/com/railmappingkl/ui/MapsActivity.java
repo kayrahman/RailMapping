@@ -9,7 +9,6 @@ package neel.com.railmappingkl.ui;
 import android.Manifest;
 import android.app.AlertDialog;
 import android.app.Dialog;
-import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -18,17 +17,16 @@ import android.location.Location;
 import android.location.LocationManager;
 import android.os.Build;
 import android.os.Looper;
-import android.os.Parcelable;
 import android.provider.Settings;
-import android.support.annotation.NonNull;
-import android.support.design.widget.BottomNavigationView;
-import android.support.design.widget.BottomSheetBehavior;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.app.FragmentActivity;
+import androidx.annotation.NonNull;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.bottomsheet.BottomSheetBehavior;
+import androidx.core.app.ActivityCompat;
+import androidx.fragment.app.FragmentActivity;
 import android.os.Bundle;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.core.content.ContextCompat;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
@@ -68,11 +66,6 @@ import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
@@ -83,16 +76,10 @@ import neel.com.railmappingkl.R;
 import neel.com.railmappingkl.adapter.CustomInfoWindowAdapter;
 import neel.com.railmappingkl.adapter.NearbyStationsListRecyclerAdapter;
 import neel.com.railmappingkl.adapter.PlaceAutoCompleteAdapter;
-import neel.com.railmappingkl.adapter.PopularPlaceRecyclerAdapter;
 import neel.com.railmappingkl.model.GetDirectionsData;
 import neel.com.railmappingkl.model.NearbyPlacesData;
-import neel.com.railmappingkl.model.OnPopularPlaceItemClick;
 import neel.com.railmappingkl.model.PlaceInfo;
-import neel.com.railmappingkl.model.PopularPlace;
 import neel.com.railmappingkl.model.StationInfo;
-
-import static neel.com.railmappingkl.helperUtils.FirebaseConstants.DATABASE_MOST_POPULAR_PLACES;
-import static neel.com.railmappingkl.ui.PlaceDetailActivity.LIST_ITEM_KEY;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback,GoogleApiClient.OnConnectionFailedListener{
 

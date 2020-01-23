@@ -1,9 +1,7 @@
 package neel.com.railmappingkl.model;
 
-import android.graphics.BitmapFactory;
 import android.location.Location;
 import android.os.AsyncTask;
-import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 
 import com.google.android.gms.maps.CameraUpdateFactory;

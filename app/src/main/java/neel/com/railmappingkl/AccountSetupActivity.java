@@ -1,14 +1,13 @@
 package neel.com.railmappingkl;
 
 import android.app.ProgressDialog;
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.net.Uri;
-import android.support.annotation.NonNull;
-import android.support.design.widget.BottomNavigationView;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.NonNull;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.Menu;
@@ -46,7 +45,6 @@ import de.hdodenhof.circleimageview.CircleImageView;
 import id.zelory.compressor.Compressor;
 import neel.com.railmappingkl.ui.MapsActivity;
 import neel.com.railmappingkl.ui.PlacesListActivity;
-import neel.com.railmappingkl.ui.RouteStepsActivity;
 
 public class AccountSetupActivity extends AppCompatActivity {
 
