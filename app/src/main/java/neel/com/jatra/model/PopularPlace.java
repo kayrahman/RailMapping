@@ -1,4 +1,4 @@
-package neel.com.railmappingkl.model;
+package neel.com.jatra.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;

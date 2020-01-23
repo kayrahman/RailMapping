@@ -1,4 +1,4 @@
-package neel.com.railmappingkl;
+package neel.com.jatra;
 
 import android.content.Intent;
 import android.media.MediaPlayer;
@@ -25,9 +25,9 @@ import com.google.firebase.iid.FirebaseInstanceId;
 
 import java.util.HashMap;
 
-import neel.com.railmappingkl.ui.MapsActivity;
+import neel.com.jatra.ui.MapsActivity;
 
-import static neel.com.railmappingkl.helperUtils.FirebaseConstants.DATABASE_USER;
+import static neel.com.jatra.helperUtils.FirebaseConstants.DATABASE_USER;
 
 public class LoginActivity extends AppCompatActivity {
 

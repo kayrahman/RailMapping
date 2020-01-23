@@ -1,4 +1,4 @@
-package neel.com.railmappingkl.adapter;
+package neel.com.jatra.adapter;
 
 import android.content.Context;
 import androidx.annotation.NonNull;
@@ -13,9 +13,9 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
-import neel.com.railmappingkl.R;
-import neel.com.railmappingkl.model.OnPopularPlaceItemClick;
-import neel.com.railmappingkl.model.PopularPlace;
+import neel.com.jatra.R;
+import neel.com.jatra.model.OnPopularPlaceItemClick;
+import neel.com.jatra.model.PopularPlace;
 
 public class PopularPlaceRecyclerAdapter extends RecyclerView.Adapter<PopularPlaceRecyclerAdapter.PopularPlaceViewHolder> {
 
@@ -79,7 +79,7 @@ public class PopularPlaceRecyclerAdapter extends RecyclerView.Adapter<PopularPla
             mPlaceTitleTv.setText(mPopularPlaces.get(position).getTitle());
             mPlaceDescTv.setText(mPopularPlaces.get(position).getDescription());
 
-            Picasso.with(mContext)
+            Picasso.get()
                     .load(mPopularPlaces.get(position).getPhoto_utl())
                     .into(mImageView);
 

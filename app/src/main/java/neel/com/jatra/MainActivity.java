@@ -1,4 +1,4 @@
-package neel.com.railmappingkl;
+package neel.com.jatra;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,11 +17,11 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import neel.com.railmappingkl.ui.MapsActivity;
-import neel.com.railmappingkl.ui.PlacesListActivity;
-import neel.com.railmappingkl.ui.RouteStepsActivity;
+import neel.com.jatra.ui.MapsActivity;
+import neel.com.jatra.ui.PlacesListActivity;
+import neel.com.jatra.ui.RouteStepsActivity;
 
-import static neel.com.railmappingkl.helperUtils.FirebaseConstants.DATABASE_USER;
+import static neel.com.jatra.helperUtils.FirebaseConstants.DATABASE_USER;
 
 public class MainActivity extends AppCompatActivity {
 

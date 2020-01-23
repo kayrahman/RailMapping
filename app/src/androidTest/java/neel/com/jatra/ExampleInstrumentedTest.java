@@ -1,4 +1,4 @@
-package neel.com.railmappingkl;
+package neel.com.jatra;
 
 import android.content.Context;
 import androidx.test.platform.app.InstrumentationRegistry;

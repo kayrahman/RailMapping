@@ -1,27 +1,16 @@
-package neel.com.railmappingkl.model;
+package neel.com.jatra.model;
 
 import android.graphics.Color;
-import android.location.Location;
 import android.os.AsyncTask;
 import android.util.Log;
 
-import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.model.BitmapDescriptorFactory;
-import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
-import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.PolylineOptions;
 import com.google.maps.android.PolyUtil;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import neel.com.railmappingkl.R;
-import neel.com.railmappingkl.adapter.NearbyStationsListRecyclerAdapter;
 
 public class GetDirectionsData extends AsyncTask<Object,String,String> {
 

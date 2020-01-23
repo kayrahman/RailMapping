@@ -1,4 +1,4 @@
-package neel.com.railmappingkl.model;
+package neel.com.jatra.model;
 
 public class StationInfo {
 

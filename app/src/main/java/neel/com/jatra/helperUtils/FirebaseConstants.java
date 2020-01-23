@@ -1,4 +1,4 @@
-package neel.com.railmappingkl.helperUtils;
+package neel.com.jatra.helperUtils;
 
 public class FirebaseConstants {
 

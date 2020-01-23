@@ -1,4 +1,4 @@
-package neel.com.railmappingkl.adapter;
+package neel.com.jatra.adapter;
 
 import android.content.Context;
 import android.graphics.Typeface;

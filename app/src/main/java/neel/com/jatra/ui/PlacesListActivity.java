@@ -1,4 +1,4 @@
-package neel.com.railmappingkl.ui;
+package neel.com.jatra.ui;
 
 import android.content.Intent;
 import androidx.annotation.NonNull;
@@ -19,15 +19,15 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-import neel.com.railmappingkl.AccountSetupActivity;
-import neel.com.railmappingkl.MainActivity;
-import neel.com.railmappingkl.R;
-import neel.com.railmappingkl.adapter.PopularPlaceRecyclerAdapter;
-import neel.com.railmappingkl.model.OnPopularPlaceItemClick;
-import neel.com.railmappingkl.model.PopularPlace;
+import neel.com.jatra.AccountSetupActivity;
+import neel.com.jatra.MainActivity;
+import neel.com.jatra.R;
+import neel.com.jatra.adapter.PopularPlaceRecyclerAdapter;
+import neel.com.jatra.model.OnPopularPlaceItemClick;
+import neel.com.jatra.model.PopularPlace;
 
-import static neel.com.railmappingkl.helperUtils.FirebaseConstants.DATABASE_MOST_POPULAR_PLACES;
-import static neel.com.railmappingkl.ui.PlaceDetailActivity.LIST_ITEM_KEY;
+import static neel.com.jatra.helperUtils.FirebaseConstants.DATABASE_MOST_POPULAR_PLACES;
+import static neel.com.jatra.ui.PlaceDetailActivity.LIST_ITEM_KEY;
 
 public class PlacesListActivity extends AppCompatActivity implements OnPopularPlaceItemClick {
 

@@ -1,4 +1,4 @@
-package neel.com.railmappingkl;
+package neel.com.jatra;
 
 import org.junit.Test;
 

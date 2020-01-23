@@ -1,4 +1,4 @@
-package neel.com.railmappingkl.model;
+package neel.com.jatra.model;
 
 import android.location.Location;
 import android.os.AsyncTask;
@@ -15,8 +15,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-import neel.com.railmappingkl.R;
-import neel.com.railmappingkl.adapter.NearbyStationsListRecyclerAdapter;
+import neel.com.jatra.R;
+import neel.com.jatra.adapter.NearbyStationsListRecyclerAdapter;
 
 public class NearbyPlacesData extends AsyncTask<Object,String,String> {
 

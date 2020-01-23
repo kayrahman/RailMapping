@@ -1,4 +1,4 @@
-package neel.com.railmappingkl.ui;
+package neel.com.jatra.ui;
 
 import android.content.Intent;
 import android.media.MediaPlayer;
@@ -20,10 +20,10 @@ import android.widget.VideoView;
 import com.google.firebase.database.DatabaseReference;
 import com.squareup.picasso.Picasso;
 
-import neel.com.railmappingkl.AccountSetupActivity;
-import neel.com.railmappingkl.MainActivity;
-import neel.com.railmappingkl.R;
-import neel.com.railmappingkl.model.PopularPlace;
+import neel.com.jatra.AccountSetupActivity;
+import neel.com.jatra.MainActivity;
+import neel.com.jatra.R;
+import neel.com.jatra.model.PopularPlace;
 
 public class PlaceDetailActivity extends AppCompatActivity {
 
@@ -141,7 +141,7 @@ public class PlaceDetailActivity extends AppCompatActivity {
 
             Log.i("video_url",video_url);
 
-            Picasso.with(this)
+            Picasso.get()
                     .load(popularPlace.getPhoto_utl())
                     .into(mImageView);
 

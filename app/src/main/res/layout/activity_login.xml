@@ -112,7 +112,7 @@
         android:id="@+id/btn_ac_login_register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/bg_register_btn"
+        android:background="@drawable/bg_login_btn"
         android:text="Register"
         android:textColor="@color/colorWhite"
         android:layout_marginTop="16dp"

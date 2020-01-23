@@ -1,4 +1,4 @@
-package neel.com.railmappingkl;
+package neel.com.jatra;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -43,8 +43,8 @@ import java.util.Map;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 import id.zelory.compressor.Compressor;
-import neel.com.railmappingkl.ui.MapsActivity;
-import neel.com.railmappingkl.ui.PlacesListActivity;
+import neel.com.jatra.ui.MapsActivity;
+import neel.com.jatra.ui.PlacesListActivity;
 
 public class AccountSetupActivity extends AppCompatActivity {
 
@@ -217,7 +217,7 @@ public class AccountSetupActivity extends AppCompatActivity {
                     if(dataSnapshot.hasChild("image")){
                         String image = dataSnapshot.child("image").getValue().toString();
 
-                        Picasso.with(AccountSetupActivity.this)
+                        Picasso.get()
                                 .load(image)
                                 .placeholder(R.drawable.male)
                                 .into(mDisplayImageBtn);

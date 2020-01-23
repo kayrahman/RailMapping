@@ -1,4 +1,4 @@
-package neel.com.railmappingkl.ui;
+package neel.com.jatra.ui;
 
 import android.content.Intent;
 import androidx.annotation.NonNull;
@@ -8,9 +8,9 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import neel.com.railmappingkl.AccountSetupActivity;
-import neel.com.railmappingkl.MainActivity;
-import neel.com.railmappingkl.R;
+import neel.com.jatra.AccountSetupActivity;
+import neel.com.jatra.MainActivity;
+import neel.com.jatra.R;
 
 public class RouteStepsActivity extends AppCompatActivity {
 

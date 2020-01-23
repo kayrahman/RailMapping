@@ -1,4 +1,4 @@
-package neel.com.railmappingkl.adapter;
+package neel.com.jatra.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,7 +8,7 @@ import android.widget.TextView;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.model.Marker;
 
-import neel.com.railmappingkl.R;
+import neel.com.jatra.R;
 
 public class CustomInfoWindowAdapter implements GoogleMap.InfoWindowAdapter {
 

@@ -1,4 +1,4 @@
-package neel.com.railmappingkl.adapter;
+package neel.com.jatra.adapter;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -9,8 +9,8 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import neel.com.railmappingkl.R;
-import neel.com.railmappingkl.model.StationInfo;
+import neel.com.jatra.R;
+import neel.com.jatra.model.StationInfo;
 
 public class NearbyStationsListRecyclerAdapter extends RecyclerView.Adapter<NearbyStationsListRecyclerAdapter.NearbyStationsListViewHolder> {
 

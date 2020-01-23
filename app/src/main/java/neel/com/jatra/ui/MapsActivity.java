@@ -1,4 +1,4 @@
-package neel.com.railmappingkl.ui;
+package neel.com.jatra.ui;
 
 
 
@@ -69,17 +69,17 @@ import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.ArrayList;
 
-import neel.com.railmappingkl.AccountSetupActivity;
-import neel.com.railmappingkl.LoginActivity;
-import neel.com.railmappingkl.MainActivity;
-import neel.com.railmappingkl.R;
-import neel.com.railmappingkl.adapter.CustomInfoWindowAdapter;
-import neel.com.railmappingkl.adapter.NearbyStationsListRecyclerAdapter;
-import neel.com.railmappingkl.adapter.PlaceAutoCompleteAdapter;
-import neel.com.railmappingkl.model.GetDirectionsData;
-import neel.com.railmappingkl.model.NearbyPlacesData;
-import neel.com.railmappingkl.model.PlaceInfo;
-import neel.com.railmappingkl.model.StationInfo;
+import neel.com.jatra.AccountSetupActivity;
+import neel.com.jatra.LoginActivity;
+import neel.com.jatra.MainActivity;
+import neel.com.jatra.R;
+import neel.com.jatra.adapter.CustomInfoWindowAdapter;
+import neel.com.jatra.adapter.NearbyStationsListRecyclerAdapter;
+import neel.com.jatra.adapter.PlaceAutoCompleteAdapter;
+import neel.com.jatra.model.GetDirectionsData;
+import neel.com.jatra.model.NearbyPlacesData;
+import neel.com.jatra.model.PlaceInfo;
+import neel.com.jatra.model.StationInfo;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback,GoogleApiClient.OnConnectionFailedListener{
 
