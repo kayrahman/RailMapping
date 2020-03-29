@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "398597820770",
+    "firebase_url": "https://jatra-631a4.firebaseio.com",
+    "project_id": "jatra-631a4",
+    "storage_bucket": "jatra-631a4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:398597820770:android:ad37976b3184b07ecc1c3b",
+        "android_client_info": {
+          "package_name": "neel.com.jatra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "398597820770-vedo1haikor29nvspoermu8p7fd51sut.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgcVzl0ntQ4M3Lm-6L9MFvFyrxkVbz7CY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "398597820770-vedo1haikor29nvspoermu8p7fd51sut.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
